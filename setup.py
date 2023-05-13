@@ -5,7 +5,8 @@ with open("README.rst", "r", encoding="utf-8") as fh:
 
 setup(
     name='imsholcal',
-    version='0.1.0',
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
     packages=find_packages(),
     install_requires=['pandas', 'requests'],
     include_package_data=True,
