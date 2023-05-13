@@ -13,7 +13,8 @@ import io
 
 
 def exch_hols(n, country):
-
+    # Clear cache
+    requests_cache.clear()
     url = 'https://raw.githubusercontent.com/mcunningto/imsholcal/main/exchange_holidays.csv'
     response = requests.get(url)
     holidays_df = pd.read_csv(io.StringIO(response.text))
