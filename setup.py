@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-with open('README.rst') as f:
-    long_description = f.read()
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
 
 setup(
     name='imsholcal',
@@ -15,5 +15,5 @@ setup(
     author_email='mcunningto@gmail.com',
     description='business day offset function with custom exchange based holiday calendar',
     long_description=long_description,
-    long_description_content_type='text/x-rst'
+    long_description_content_type='text/markdown'
 )
