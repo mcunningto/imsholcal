@@ -14,6 +14,6 @@ setup(
     author='mcunningto',
     author_email='mcunningto@gmail.com',
     description='business day offset function with custom exchange based holiday calendar',
-    long_description=long_description,
-    long_description_content_type="text/markdown"
+    long_description='',
+    long_description_content_type='text/x-rst'
 )
