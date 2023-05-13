@@ -10,6 +10,7 @@ from pandas.tseries.offsets import CustomBusinessDay
 import pandas as pd
 import requests
 import io
+import requests_cache
 
 
 def exch_hols(n, country):
