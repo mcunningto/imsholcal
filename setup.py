@@ -7,7 +7,7 @@ setup(
     name='imsholcal',
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
-    packages=['business_day'],
+    packages=find_packages(),
     install_requires=['pandas', 'requests'],
     include_package_data=True,
     url='https://github.com/mcunningto/imsholcal',
