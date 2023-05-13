@@ -4,7 +4,7 @@ setup(
     name='imsholcal',
     version='0.1.0',
     packages=find_packages(),
-    install_requires=['pandas'],
+    install_requires=['pandas', 'requests'],
     include_package_data=True,
     url='https://github.com/mcunningto/imsholcal',
     license='MIT',
