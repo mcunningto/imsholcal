@@ -8,7 +8,7 @@ setup(
     use_scm_version=True,
     setup_requires=['setuptools_scm'],
     packages=find_packages(),
-    install_requires=['pandas', 'requests'],
+    install_requires=['pandas', 'requests', 'requests_cache'],
     include_package_data=True,
     url='https://github.com/mcunningto/imsholcal',
     license='MIT',
