@@ -23,9 +23,11 @@ def exch_hols(n, country):
     # Filter the DataFrame to include only holidays for the specified country
     filtered_df = holidays_df[holidays_df['country'] == country]
     # Convert the date column to datetime format with specified date format
-    filtered_df['date'] = pd.to_datetime(filtered_df['date'], format='%d/%m/%Y')
+    filtered_df_copy = filtered_df.copy()
+    filtered_df_copy['date'] = pd.to_datetime(filtered_df_copy['date'], format='%d/%m/%Y')
+
     # Create a list of dates from the filtered DataFrame
-    dates = filtered_df['date'].tolist()
+    dates = filtered_df_copy['date'].tolist()
     # Create a CustomBusinessDay object that uses the list of dates as holidays
     bday = CustomBusinessDay(holidays=dates) * n
     return bday
